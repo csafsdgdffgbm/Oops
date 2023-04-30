@@ -1,0 +1,96 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class Hall {
+public:
+       string name;
+       int capacity;
+       bool isBooked;
+
+Hall(string n, int c) {
+name = n;
+capacity Es
+isBooked — false;
+
+   }
+};
+class BookingSystem {
+public:
+     vector<Hall> halls;
+
+void addHall(string name, int capacity) {
+     halls.push_back(Hall(name,capacity));
+     class BookingSystem {
+public:
+     vector<Hall> halls;
+
+void addHall(string name, int capacity) {
+    halls.push_back(Hall(name, capacity));
+}
+
+void bookHall(int hallIndex) {
+if (hallIndex >= halls.size()) {
+cout << "Invalid hall index" << endl;
+return;
+
+}
+
+if (halls[hallIndex].isBooked) {
+cout << "Hall is already booked" << endl;
+return;
+
+}
+
+halls[hallIndex].isBooked = true;
+cout << "Hall " << halls[hallIndex].name << " booked successfully" <<
+endl;
+}
+
+void showHalls() {cout << "Hall " << halls[halllIndex].name << " booked successfull
+
+endl;
+
+void showHalls() {
+cout << "Halls available:" << endl;
+for (int i = 0; i < halls.size(); i++) {
+cout << i << ". " << halls[i].name << " (Capacity:
+.capacity << ")";
+if (halls[i].isBooked) {
+cout << " (Booked)";
+}
+cout << endl;
+}
+}
+};
+
+int main() {
+BookingSystem bs;
+
+bs.addHall("Main Hall", 200);
+bs.addHall("Conference Room", 50);
+bs.addHall( "Gymnasium", 300);
+
+bs.showHalls();
+cout =< endl;
+}
+}
+};
+
+int main() {
+BookingSystem bs;
+
+bs.addHall(" "Main Hall",200);
+bs.addHall("Conference Room",
+bs.addHall( "Gymnasium",
+bs.showHalls();
+bs.bookHall(0);
+bs.bookHall(1);
+bs.bookHall(2>);
+bs.bookHall(0);
+bs.showHalls(); 
+
+return 0;
+}
